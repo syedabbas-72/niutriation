@@ -1,0 +1,47 @@
+<!-- <ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Devdactic App</ion-title>
+    </ion-toolbar>
+</ion-header> -->
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center ">
+    <!-- <img src="../../assets/logo.png" class="logo" /> -->
+
+    <div class="title">
+        <h2>Welcome</h2>
+        <p>Enjoy the Nutrition App</p>
+    </div>
+
+    <div class="ion-margin-top">
+        <form (ngSubmit)="login()" [formGroup]="credentials">
+            <div class="input-group">
+                <ion-item>
+                    <ion-input type="tel" placeholder="Phone number" formControlName="phone"></ion-input>
+                </ion-item>
+                <!-- <div *ngIf="(phone.dirty || phone.touched) && phone.errors" class="errors">
+                <span *ngIf="phone.errors?.required">phone is required</span>
+                <span *ngIf="phone.errors?.phone">phone is invalid</span>
+            </div> -->
+                <ion-item>
+                    <ion-input type="number" placeholder="otp" formControlName="otp"></ion-input>
+                </ion-item>
+                <!-- <div *ngIf="(otp.dirty || otp.touched) && otp.errors" class="errors">
+                <span *ngIf="otp.errors?.required">otp is required</span>
+                <span *ngIf="otp.errors?.minlength">otp needs to be 4 characters</span>
+            </div> -->
+            </div>
+
+            <ion-button type="submit" expand="block" [disabled]="!credentials.valid" class="hyphy">Log in</ion-button>
+
+
+            <!-- <ion-button type="button" expand="block" color="tertiary">
+            <ion-icon name="logo-google" slot="start"></ion-icon>
+            Sign in with Google
+        </ion-button> -->
+
+        </form>
+    </div>
+</ion-content>

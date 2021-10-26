@@ -1,0 +1,40 @@
+// ion-content {
+//     --background: #0081ca;
+// }
+ion-slides {
+    height: 100%;
+    --bullet-background-active: #fff;
+    --bullet-background: #000;
+}
+
+.profile-item {
+    text-align: center;
+}
+
+.profile-picture {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    border-radius: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 0 auto;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 128px;
+    border-radius: 100%;
+}
+
+.profile-name {
+    font-size: x-large !important;
+    font-weight: bold !important;
+    text-transform: capitalize;
+}
+
+.display {
+    display: block !important;
+}

@@ -1,0 +1,68 @@
+<ion-toolbar>
+    <div class="list card">
+        <div class="profile-item display">
+            <div class="profile-picture big-profile-picture">
+                <img src="https://randomuser.me/api/portraits/thumb/men/12.jpg">
+            </div>
+            <h2 class="profile-name dark">Phani</h2>
+            <div class="profile-info">Hyderabad</div>
+        </div>
+
+    </div>
+</ion-toolbar>
+<ion-content color="light">
+    <ion-toolbar>
+        <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="segment" color="primary">
+            <ion-segment-button value="0">
+                <ion-label>HISTORY</ion-label>
+
+            </ion-segment-button>
+            <ion-segment-button value="1">
+                <ion-label>DETAILS</ion-label>
+
+            </ion-segment-button>
+
+        </ion-segment>
+    </ion-toolbar>
+
+    <div #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+        <div>
+
+            <ion-list>
+                <ion-radio-group>
+                    <ion-list-header>
+                        <ion-label>
+                            Auto Manufacturers
+                        </ion-label>
+                    </ion-list-header>
+
+                    <ion-item>
+                        <ion-label>Cord</ion-label>
+                        <ion-radio value="cord"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>Duesenberg</ion-label>
+                        <ion-radio value="duesenberg"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>Hudson</ion-label>
+                        <ion-radio value="hudson"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>Packard</ion-label>
+                        <ion-radio value="packard"></ion-radio>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label>Studebaker</ion-label>
+                        <ion-radio value="studebaker"></ion-radio>
+                    </ion-item>
+                </ion-radio-group>
+            </ion-list>
+        </div>
+        <div>Second Segment</div>
+    </div>
+</ion-content>

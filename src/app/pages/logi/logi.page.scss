@@ -1,0 +1,35 @@
+ion-content {
+    --padding-top: 40%;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    // --background: #0081ca;
+    // --background: url('https://st.depositphotos.com/3200537/5119/v/600/depositphotos_51192867-stock-illustration-running-man-silhouette-filled-with.jpg') 0 0/100% 100% no-repeat;
+}
+
+.input-group {
+    background: rgb(22, 19, 19);
+    // border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.errors {
+    font-size: small;
+    color: rgb(12, 11, 11);
+    background: var(--ion-color-danger);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.title p {
+    margin-top: 0 !important;
+}
